@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+
+
+
+  resources :topics do
+    resources :bookmarks, only: [:destroy, :create]
+  end
+  
   get 'about' => 'welcome#about'
 
  

@@ -1,0 +1,10 @@
+<%= form_for [@topic, @topic.bookmarks.new] do |f| %>
+<div class="col-md-5">
+  <div class="form-group">
+    <%= f.text_field :link, placeholder: "Enter bookmark url", class: 'form-control' %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "save", class: 'form-control' %>
+  </div>
+  <% end %>
+</div>
